@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @gekkowrld
 - 👀 I’m interested in programming in different progam develoment
-- 🌱 I’m currently learning web development and C language
+- 🌱 I’m currently learning web development @theodinproject
 - 💞️ I’m looking to collaborate on all projects related to web development
 - 📫 Email me at gekkowrld@gmail.com
 
