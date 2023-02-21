@@ -1,8 +1,7 @@
-- 👋 Hi, I’m @gekkowrld
-- 👀 I’m interested in programming in different progam develoment
-- 🌱 I’m currently learning web development @theodinproject
-- 💞️ I’m looking to collaborate on all projects related to web development
-- 📫 Email me at gekkowrld@gmail.com
+- Hi, I’m [@gekkowrld](https://github.com/gekkowrld)
+- I’m currently learning web development [@theodinproject](https://github.com/TheOdinProject)
+- I’m looking to collaborate with you on your projects
+- Tweet me [@gekkowrld](https://twitter.com/gekkowrld) or connect with me on [linkedIn](https://linkedin.com/in/gekkowrld)
 
 <!---
 gekkowrld/gekkowrld is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
