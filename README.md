@@ -1,5 +1,8 @@
 ![Celebrate 40 years of GNU!](https://www.gnu.org/gnu40/GNU40_badge-sm.png)  
 
+<!--START_SECTION:top_language-->
+<!--END_SECTION:top_language-->
+
 Find me on twitter [@gekkowrld](https://twitter.com/gekkowrld) or on linkedIn [@ Gordon](https://linkedin.com/in/gekkowrld) and now on hashnode [@gekkowrld](https://hashnode.com/@gekkowrld)
 
 <!---
