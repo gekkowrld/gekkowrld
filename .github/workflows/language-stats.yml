@@ -18,5 +18,4 @@ jobs:
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
             BAR_WIDTH: 25
             SHOW_TOTAL: true 
-            TOP_TOTAL: true 
             SHOW_TOTAL_SEPARATOR: true 
