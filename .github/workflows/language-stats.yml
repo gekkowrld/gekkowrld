@@ -1,4 +1,4 @@
-name: Top-Languages Readme
+name: Languages Statistics
 
 on:
     workflow_dispatch:
