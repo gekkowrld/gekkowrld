@@ -1,4 +1,4 @@
-name: Languages Statistics
+name: Language Statistics
 
 on:
     workflow_dispatch:
@@ -14,7 +14,8 @@ jobs:
         - uses: ryuanerin/top-languages-readme@master
           with:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
-            COMMIT_MESSAGE: "Update the Graph with new Metrics" # Optional
-            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
-            BLOCKS: "░█" # Optional
-            BAR_WIDTH: 25 # Optional
+            COMMIT_MESSAGE: "Update the Graph with new Metrics"
+            DONE_BLOCK:  "█"
+            EMPTY_BLOCK: " "
+            LIST_COUNT:  10
+            HIDE_SIZE: false
