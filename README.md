@@ -14,8 +14,6 @@ TOTAL        122.47 KiB ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿�
 ```
 <!--END_SECTION:top_language-->
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
 Find me on twitter [@gekkowrld](https://twitter.com/gekkowrld) or on linkedIn [@ Gordon](https://linkedin.com/in/gekkowrld) and now on hashnode [@gekkowrld](https://hashnode.com/@gekkowrld)
 
