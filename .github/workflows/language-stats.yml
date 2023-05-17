@@ -15,11 +15,10 @@ jobs:
         id: set_commit_message
         run: |
           COMMIT_MESSAGE="Update the Graph with new Metrics on $(date +"%Y-%m-%d")"
-          echo "Setting commit message to $COMMIT_MESSAGE"
 
       - uses: ryuanerin/top-languages-readme@master
         with:
-          COMMIT_MESSAGE: ${{ steps.set_commit_message.outputs.COMMIT_MESSAGE }}
+          COMMIT_MESSAGE: ${{ INPUT_COMMIT_MESSAGE.COMMIT_MESSAGE }}
           LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
           BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
           BAR_WIDTH: 25
