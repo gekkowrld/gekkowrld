@@ -1,10 +1,10 @@
-name: LAnguage Statistics
+name: Language Statistics
 
 on:
     workflow_dispatch:
     schedule:
-        # Runs at 12am UTC
-        - cron: '0 0 * * *'
+        # Runs at 12am EAT
+        - cron: '0 3 * * *'
 
 jobs:
     update-readme:
