@@ -1,22 +1,21 @@
-name: Top-Languages Readme
+name: Waka Readme
 
 on:
-    workflow_dispatch:
-    schedule:
-        # Runs at 12am UTC
-        - cron: '0 * * * *'
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
-    update-readme:
-        name: Update this repo's README
-        runs-on: ubuntu-latest
-        steps:
-        - uses: ryuanerin/top-languages-readme@master
-          with:
-            COMMIT_MESSAGE: "Update the README.md graph with the latest data" 
-            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
-            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
-            BAR_WIDTH: 25 
-            SHOW_TOTAL: true 
-            TOP_TOTAL: false 
-            SHOW_TOTAL_SEPARATOR: true 
+  update-readme:
+    name: WakaReadme DevMetrics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: true
+          BLOCKS: ->
+          TIME_RANGE: all_time
+          SHOW_TIME: true
+          SHOW_MASKED_TIME: true
+          # LANG_COUNT: 10
