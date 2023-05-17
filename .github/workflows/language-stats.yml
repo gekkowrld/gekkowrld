@@ -13,10 +13,10 @@ jobs:
         steps:
         - uses: ryuanerin/top-languages-readme@master
           with:
-            COMMIT_MESSAGE: "Update the Graph with new Metrics" # Optional
-            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
-            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" # Optional
-            BAR_WIDTH: 25 # Optional
-            SHOW_TOTAL: false # Optional
-            TOP_TOTAL: false # Optional
-            SHOW_TOTAL_SEPARATOR: true # Optional
+            COMMIT_MESSAGE: "Update the Graph with new Metrics" 
+            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
+            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
+            BAR_WIDTH: 25
+            SHOW_TOTAL: true 
+            TOP_TOTAL: true 
+            SHOW_TOTAL_SEPARATOR: true 
