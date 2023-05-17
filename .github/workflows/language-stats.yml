@@ -11,14 +11,9 @@
       name: Update this repo's README
       runs-on: ubuntu-latest
       steps:
-        - name: Set commit message
-          id: set_commit_message
-          run: |
-            echo "::set-output name=COMMIT_MESSAGE::Update the Graph with new Metrics on $(date +"%Y-%m-%d")"
-  
         - uses: ryuanerin/top-languages-readme@master
           with:
-            COMMIT_MESSAGE: ${{ steps.set_commit_message.outputs.COMMIT_MESSAGE }}
+            COMMIT_MESSAGE: Update Readme graph with the latest data
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
             BAR_WIDTH: 25
