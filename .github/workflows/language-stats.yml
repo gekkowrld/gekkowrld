@@ -13,6 +13,7 @@ jobs:
         steps:
         - uses: ryuanerin/top-languages-readme@master
           with:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
             COMMIT_MESSAGE: "Update the Graph with new Metrics" # Optional
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
             BLOCKS: "░█" # Optional
