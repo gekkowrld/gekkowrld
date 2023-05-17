@@ -1,21 +1,22 @@
-  name: Language Statistics
-  
-  on:
+name: Top-Languages Readme
+
+on:
     workflow_dispatch:
     schedule:
-      # Runs at 12am EAT
-      - cron: '0 3 * * *'
-  
-  jobs:
+        # Runs at 12am UTC
+        - cron: '0 * * * *'
+
+jobs:
     update-readme:
-      name: Update this repo's README
-      runs-on: ubuntu-latest
-      steps:
+        name: Update this repo's README
+        runs-on: ubuntu-latest
+        steps:
         - uses: ryuanerin/top-languages-readme@master
           with:
-            COMMIT_MESSAGE: "Update Readme graph with the latest data"
-            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
-            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
-            BAR_WIDTH: 25
-            SHOW_TOTAL: true
-            SHOW_TOTAL_SEPARATOR: true
+            COMMIT_MESSAGE: "Update the README.md graph with the lates data" 
+            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
+            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
+            BAR_WIDTH: 25 
+            SHOW_TOTAL: true 
+            TOP_TOTAL: false 
+            SHOW_TOTAL_SEPARATOR: true 
