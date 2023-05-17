@@ -11,13 +11,23 @@ jobs:
     name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
-      - name: Set commit message
-        id: set_commit_message
-        run: echo "COMMIT_MESSAGE=Update the Graph with new Metrics on $(date +"%Y-%m-%d")" >> $GITHUB_ENV
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - uses: ryuanerin/top-languages-readme@master
+      - name: Set commit message
+        run: echo "COMMIT_MESSAGE=Update the Graph with new Metrics on $(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "${COMMIT_MESSAGE}"
+          git push
+
+      - name: Update README with language statistics
+        uses: ryuanerin/top-languages-readme@master
         with:
-          COMMIT_MESSAGE: ${{ env.COMMIT_MESSAGE }}
           LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
           BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
           BAR_WIDTH: 25
