@@ -15,7 +15,7 @@ jobs:
           with:
             COMMIT_MESSAGE: "Update the Graph with new Metrics" # Optional
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" # Optional
-            BLOCKS: "░█" # Optional
+            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" # Optional
             BAR_WIDTH: 25 # Optional
             SHOW_TOTAL: false # Optional
             TOP_TOTAL: false # Optional
