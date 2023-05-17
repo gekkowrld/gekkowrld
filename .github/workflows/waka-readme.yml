@@ -21,10 +21,8 @@ jobs:
     name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
-      - uses: ryuanerin/waka-readme@master
+      - uses: athul/waka-readme@master
         with:
-          # GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          API_BASE_URL: 'https://waka.ryuar.in/api'
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           BLOCKS: '⣀⣄⣆⣇⣧⣷⣿'
           
