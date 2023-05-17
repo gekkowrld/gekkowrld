@@ -1,26 +1,26 @@
-name: Language Statistics
-
-on:
-  workflow_dispatch:
-  schedule:
-    # Runs at 12am EAT
-    - cron: '0 3 * * *'
-
-jobs:
-  update-readme:
-    name: Update this repo's README
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set commit message
-        id: set_commit_message
-        run: |
-          COMMIT_MESSAGE="Update the Graph with new Metrics on $(date +"%Y-%m-%d")"
-
-      - uses: ryuanerin/top-languages-readme@master
-        with:
-          COMMIT_MESSAGE: ${{ steps.set_commit_message.outputs.COMMIT_MESSAGE }}
-          LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
-          BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
-          BAR_WIDTH: 25
-          SHOW_TOTAL: true
-          SHOW_TOTAL_SEPARATOR: true
+  name: Language Statistics
+  
+  on:
+    workflow_dispatch:
+    schedule:
+      # Runs at 12am EAT
+      - cron: '0 3 * * *'
+  
+  jobs:
+    update-readme:
+      name: Update this repo's README
+      runs-on: ubuntu-latest
+      steps:
+        - name: Set commit message
+          id: set_commit_message
+          run: |
+            echo "::set-output name=COMMIT_MESSAGE::Update the Graph with new Metrics on $(date +"%Y-%m-%d")"
+  
+        - uses: ryuanerin/top-languages-readme@master
+          with:
+            COMMIT_MESSAGE: ${{ steps.set_commit_message.outputs.COMMIT_MESSAGE }}
+            LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT"
+            BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
+            BAR_WIDTH: 25
+            SHOW_TOTAL: true
+            SHOW_TOTAL_SEPARATOR: true
