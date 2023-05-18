@@ -1,4 +1,4 @@
-name: Top-Languages Readme
+name: Languages Graph
 
 on:
     workflow_dispatch:
@@ -11,12 +11,12 @@ on:
 
 jobs:
     update-readme:
-        name: Update this repo's README
+        name: Update the README
         runs-on: ubuntu-latest
         steps:
         - uses: ryuanerin/top-languages-readme@master
           with:
-            COMMIT_MESSAGE: "Update the README.md graph with the latest data" 
+            COMMIT_MESSAGE: "Update the README.md language graph with the latest data" 
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
             BAR_WIDTH: 25 
