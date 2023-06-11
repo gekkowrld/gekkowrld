@@ -16,7 +16,7 @@ jobs:
         steps:
         - uses: ryuanerin/top-languages-readme@master
           with:
-            COMMIT_MESSAGE: "Update the README.md language graph with the latest data" 
+            COMMIT_MESSAGE: "Update the README.md language graph on `date` with the latest data" 
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
             BAR_WIDTH: 25 
