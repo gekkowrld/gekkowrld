@@ -16,7 +16,6 @@ jobs:
         steps:
         - uses: gekkowrld/langs-readme@gekkowrld
           with:
-            COMMIT_MESSAGE: "Update the README.md language graph on `date` with the latest data" 
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
             BAR_WIDTH: 25 
