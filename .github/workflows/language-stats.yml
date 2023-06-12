@@ -14,7 +14,7 @@ jobs:
         name: Update the README
         runs-on: ubuntu-latest
         steps:
-        - uses: gekkowrld/langs-readme@gekkowrld
+        - uses: gekkowrld/langs-readme@another-py
           with:
             LINE_FORMAT: "$NAME   $SIZE $BAR  $PERCENT" 
             BLOCKS: "⣀⣄⣤⣦⣶⣷⣿" 
