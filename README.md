@@ -1,4 +1,4 @@
-![Celebrate 40 years of GNU!](https://www.gnu.org/gnu40/GNU40_badge-sm.png)  
+<a href="https://www.gnu.org/gnu40"><img src="https://www.gnu.org/gnu40/GNU40_badge-sm.png" alt="[ Celebrate 40 years of GNU! ]" /></a>
 
 <!--START_SECTION:top_language-->
 ```text
