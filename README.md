@@ -1,4 +1,3 @@
-![Keyan Flag](https://bitcoinafrica.io/wp-content/uploads/2017/05/international-2657227_1280.png)
 <!--START_SECTION:top_language-->
 ```text
 C            209.67 KiB ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   42.75 %
